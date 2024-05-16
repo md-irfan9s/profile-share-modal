@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- User profile -->
+    <div id="wrapper">
+        <div class="circle1"></div>
+        <div class="card-container">
+            
+            <div>
+                <img src="IMG_20230818_234007_752.jpg" alt="" class="profile-image">
+            </div>
+
+            <h2 class="user-name">Md Irfan</h2>
+
+            <p class="user-detail">Infromation techology</p>
+
+            <div class="social-button">
+                <button class="share-button" onclick="openModal()">Share my Profile</button>
+                <a href="https://www.linkedin.com/in/md-irfan-30b321258/" class="follow-button">Follow Me</a>
+            </div>
+
+        </div>
+        
+        <div class="circle2"></div>
+    </div>
+
+    <!-- modal Component -->
+
+    <div class="modal">
+
+        <div class="modal-header">
+            <h1 class="share-title">
+                Share My Profile
+            </h1>
+            <i class="fa fa-close" style="font-size:24px" id="close" onclick="CloseModal()"></i>
+        </div>
+
+        <div class="share-link">
+            <p>
+                Share this via
+            </p>
+
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/md-irfan-30b321258/" class="Links">
+                    <i class="fa fa-linkedin-square"  id="linkedin"></i>
+
+                </a>
+                <a href="https://www.instagram.com/m_irfan9s/" class="Links">
+                    <i class="fa fa-instagram" id="instagram"></i>
+                </a>
+                <a href="https://github.com/md-irfan9s" class="Links">
+                    <i class="fa fa-github" id="github"></i>
+                </a>
+                <a href="https://www.facebook.com/" class="Links">
+                    <i class="fa fa-facebook-f" id="facebook"></i>
+                </a>
+                
+                <a href="https://telegram.org/" class="Links">
+                    <i class="fa fa-telegram" id="telegram"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="overlay" onclick="CloseModal()"></div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</body>
+</html>
